@@ -1,0 +1,150 @@
+html
+{
+	font-size: 62.5%;
+}
+
+body
+{
+    /* background: rgb(69,168,240);
+    background: -moz-radial-gradient(circle, rgba(69,168,240,1) 0%, rgba(148,187,233,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(69,168,240,1) 0%, rgba(148,187,233,1) 100%);
+    background: radial-gradient(circle, rgba(69,168,240,1) 0%, rgba(148,187,233,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#45a8f0",endColorstr="#94bbe9",GradientType=1); */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),url(../img/background.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: top; 
+
+    font-family: "Roboto";
+    position: relative;
+	padding: 0;
+	margin: 0 20px;
+	font-size: 1.6rem;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+
+input[type="search"] {
+    -webkit-appearance: none;
+}
+
+
+section
+{
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.title-block
+{
+    margin-top: 80px;
+    text-align: center;  
+}
+
+.block
+{
+    margin: auto auto 40px auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.title
+{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    
+    display: block;
+    margin-bottom: 15px;
+}
+
+.main
+{
+    max-width: 400px;
+}
+
+.map iframe
+{
+    height: 350px;
+}
+
+
+.title-block{
+    color: white;
+    text-shadow: 0 0 2.5rem #1b56a2;
+}
+.title-block h1
+{
+    font-size: 12rem;
+    line-height: 8rem;
+    margin: 0;
+    font-weight: bold;
+}
+
+.contacts
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+}
+.contacts-el
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.contacts-el b
+{
+    font-size: 1.8rem;
+    padding-bottom: 6px;
+}
+
+.products-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    grid-gap: 35px;   
+}
+.products-container div
+{
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 1rem #92B6E3;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.products-container div img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service
+{
+    max-width: 680px;
+}
+
+
+@media screen and (max-width: 980px){
+    .products
+    {
+       max-width: 330px;   
+    }
+    .products-container
+    {
+        grid-template-columns: 1fr;
+        justify-content: center;
+    }
+}
