@@ -147,4 +147,8 @@ section
         grid-template-columns: 1fr;
         justify-content: center;
     }
+    .title-block h1
+    {
+        line-height: 10rem;
+    }
 }
